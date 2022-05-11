@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting</title>
+</head>
+<body>
+    <script>
+        a=[10,34,99,5,66];
+       
+        for(i=0;i<5;i++)
+        {
+          for (j = i+1; j<5; j++)
+           {
+             if (a[i]>a[j])
+          {  
+               t=a[i];
+             a[i]=a[j];
+             a[j]=t;
+            }   
+          }
+          document.write(a[i]+"<br>");
+        }
+
+/*5
+10
+34
+66
+99*/
+a=[10,34,99,5,66];
+       
+       for(i=0;i<5;i++)
+       {
+         for (j = i+1; j<5; j++)
+          {
+            if (a[i]<a[j])
+         {  
+              t=a[i];
+            a[i]=a[j];
+            a[j]=t;
+           }   
+         }
+         document.write(a[i]+"<br>");
+       }
+       /*99
+         66
+         34
+         10
+         5*/
+    </script>
+    
+</body>
+</html>
